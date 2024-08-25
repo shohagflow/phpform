@@ -1,0 +1,91 @@
+
+  /*cheking 1000px */
+@media only screen and (min-width: 992px) and (max-width:1200px) {
+    .area {
+        width: 974px;
+      
+    }
+    .single-service {
+        width: 313px;
+
+    }
+    .about-left {
+        width: 490px;
+
+    }
+    .about-right {
+        width: 434px;
+    }
+    .single-service2 {
+        width: 232px;
+
+    }
+    .single-gallery {
+        width: 232px;
+    }
+    .contact-form {
+        width: 507px;
+        margin-right: 154px;
+    }
+  }
+  /*cheking 800px */
+  @media only screen and (min-width: 768px) and (max-width:991px){
+    .area {
+        width: 750px;
+      
+    }
+    .single-service {
+        width: 240px;
+    }
+    .about-left {
+        width: 433px;
+    }
+    .about-right {
+        width: 286px;
+    }
+    .contact-form {
+        width: 480px;
+        margin-right: 57px;
+    }
+
+  }
+    /*cheking 400px */
+    @media only screen and (max-width: 767px){
+        .area {
+            width: 320px;
+          
+        }
+        .menu ul {
+            display: block;
+        }
+
+        .about-left {
+            width:100%;
+
+        }
+        .about-right {
+            width: 100%;
+            padding-top: 49px;
+        }
+        .about-right ul {
+            margin-left: -30px;
+        }
+        .footer {
+            margin-top: 32px;
+        }
+        .contact-form {
+            width: 322px;
+
+        }
+        .google-map {
+            margin-top: 96px;
+        }
+    }
+    /*cheking 450px */
+    @media only screen and (min-width: 480px) and (max-width:767px){
+        .area {
+            width: 450px;
+          
+        }
+
+    }

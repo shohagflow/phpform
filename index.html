@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <style>
+        body {
+            background-color: rgb(18, 16, 14);
+        }
+
+        .clock {
+            position: absolute;
+            color: #ffff;
+            top: 25%;
+            left: 50%;
+            font-size: 60px;
+            transform: translateX(-50%) translateY(-50%);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="DigitalClock" class="clock"></div>
+    <script type="text/javascript">
+
+        function showTime() {
+            var date = new Date();  // Corrected to use 'Date' with a capital 'D'
+            var h = date.getHours();
+            var m = date.getMinutes();  // Corrected to 'getMinutes'
+            var s = date.getSeconds();
+            var session = "AM"; // Default session
+
+            if (h == 0) {
+                h = 12; //12 hour formate
+            }
+
+            if (h > 12) {
+                h = h - 12;
+                session = "PM"; //12 hour formate
+
+                // }
+                // if(h<10){
+                //     h="0" + h; 
+                // }
+                // if(m<10){
+                //     m="0" + m; 
+                // }
+                // if(s<10){
+                //     s="0" + s; 
+                // }
+            }
+            h = (h < 10) ? "0" + h : h;
+            m = (m < 10) ? "0" + m : m;
+            s = (s < 10) ? "0" + s : s;
+            document.getElementById("DigitalClock").innerHTML = h + ":" + m + ":" + s + " " + session;
+
+            setTimeout(showTime, 1000);  // Update the clock every second
+        }
+        showTime();  // Initial call to start the clock immediately
+    </script>
+</body>
+
+</html>

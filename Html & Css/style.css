@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 1000px;
+    background-color: rgb(240, 141, 12);
+    margin: 0 auto;
+    overflow: hidden;
+}
+.box{
+    width: 250px;
+    background-color: aqua;
+    float: left;
+    padding: 20px;
+    margin-left: 30px;
+}
+.box img {
+    width: 100%;
+}
